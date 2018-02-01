@@ -1,6 +1,6 @@
 const MongoClient = require('mongodb').MongoClient;
 
-const url = "mongodb://localhost:27017/TodoApp";
+const url = "mongodb://localhost:27017";
 const dbName = "TodoApp";
 
 // Use connect method to connect to the server

@@ -2,7 +2,7 @@
 const {MongoClient, ObjectID} = require('mongodb');
 
 
-const url = "mongodb://localhost:27017/TodoApp";
+const url = "mongodb://localhost:27017";
 const dbName = "TodoApp";
 
 // Use connect method to connect to the server
@@ -35,7 +35,7 @@ MongoClient.connect(url, (err, client) => {
   // db.collection('Todos').findOneAndDelete({completed: false}).then((result) => {
   //   console.log(result);
   // });
-  db.collection('Users').findOneAndDelete({_id: new ObjectID('5a722d20eda79a12784a5081')}).then((result) => {
+  db.collection('Users').findOneAndDelete({_id: new ObjectID("5a72e14bd47f631832f14754")}).then((result) => {
     console.log(JSON.stringify(result, undefined, 2))
   });
 
